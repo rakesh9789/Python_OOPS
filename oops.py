@@ -31,7 +31,7 @@ class circle(shape):
         
 
 c = circle()
-s.draw()
+c.draw()
 
 
 class vehicle():
