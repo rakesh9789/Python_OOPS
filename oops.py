@@ -58,15 +58,15 @@ class Payment(ABC):
 
 class CreditCardPayment(Payment):
     def pay(self, amount):
-        print(f"Paid ₹{amount} using Credit Card. 💳")
+        print(f"Paid {amount} using Credit Card")
 
 class MobilePayment(Payment):
     def pay(self, amount):
-        print(f"Paid ₹{amount} using Mobile Payment. 📱")
+        print(f"Paid {amount} using Mobile Payment")
 
 class CashPayment(Payment):
     def pay(self, amount):
-        print(f"Paid ₹{amount} in cash. 💵")
+        print(f"Paid {amount} in cash")
 
 payments = [CreditCardPayment(), MobilePayment(), CashPayment()]
 
